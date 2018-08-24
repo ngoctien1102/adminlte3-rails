@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require popper
 //= require bootstrap-sprockets
+//= require adminlte3
 //= require_tree .
