@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    title AdminlteDemo
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  body.sidebar-mini style='height: auto;'
+    .wrapper
+      = render 'layouts/navbar'
+      = render 'layouts/main_sidebar'
+    .content-wrapper style='min-height: 671px;'
+      = yield
+    = render 'layouts/footer'
